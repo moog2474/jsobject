@@ -130,7 +130,7 @@ let students = [
 function Age() {
     for (let i = 0; i < students.length; i++) {
         if (students[i].birthYear <= 2002) {
-            console.log(students[i])
+            console.log(students[i].name, students[i].birthYear)
         }
     }
 }
@@ -145,3 +145,14 @@ function agediff() {
     }
 }
 agediff()
+
+function rel() {
+    for (let q = 0; q < students.length; q++) {
+        if (students[q].single == true) {
+            console.log(students[q].name, students[q].single);
+        }
+        else{
+        }
+    } 
+}
+rel()
